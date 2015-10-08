@@ -74,7 +74,7 @@ if( ! class_exists( 'YITH_Popup_Newsletter_Mailchimp' ) ){
         public function add_form_handling(){
             // add mailchimp subscription
             add_action( 'wp_ajax_ypop_subscribe_mailchimp_user', array( $this, 'subscribe_mailchimp_user' ) );
-            add_action( 'wp_ajax_ypop_nopriv_subscribe_mailchimp_user', array( $this, 'subscribe_mailchimp_user'));
+            add_action( 'wp_ajax_nopriv_ypop_subscribe_mailchimp_user', array( $this, 'subscribe_mailchimp_user'));
         }
 
         /**
